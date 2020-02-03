@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+struct Todo {
+    var name = ""
+    var check = false
+}
+
+

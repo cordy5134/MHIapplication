@@ -10,6 +10,9 @@ import UIKit
 
 class ScheduleCell: UITableViewCell {
 
+    @IBOutlet weak var checkMark: UILabel!
+    
+    @IBOutlet weak var todo: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

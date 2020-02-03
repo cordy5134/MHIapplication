@@ -39,7 +39,7 @@ class ScheduleController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "todo", for: indexPath) as! todoCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Schedule", for: indexPath) as! ScheduleCell
 
         
         

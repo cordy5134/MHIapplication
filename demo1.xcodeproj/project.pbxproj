@@ -13,6 +13,11 @@
 		44240BEA23E7495600996D19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44240BE823E7495600996D19 /* Main.storyboard */; };
 		44240BEC23E7495800996D19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44240BEB23E7495800996D19 /* Assets.xcassets */; };
 		44240BEF23E7495800996D19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44240BED23E7495800996D19 /* LaunchScreen.storyboard */; };
+		44240BFC23E7710F00996D19 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44240BFB23E7710F00996D19 /* Todo.swift */; };
+		44240C0A23E7825500996D19 /* todoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44240C0923E7825500996D19 /* todoCell.swift */; };
+		44240C0C23E7826100996D19 /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44240C0B23E7826100996D19 /* Table.swift */; };
+		44240C0F23E782D100996D19 /* ScheduleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44240C0E23E782D100996D19 /* ScheduleController.swift */; };
+		44240C1123E782E800996D19 /* ScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44240C1023E782E800996D19 /* ScheduleCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		44240BEB23E7495800996D19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44240BEE23E7495800996D19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44240BF023E7495800996D19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44240BFB23E7710F00996D19 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		44240C0923E7825500996D19 /* todoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = todoCell.swift; sourceTree = "<group>"; };
+		44240C0B23E7826100996D19 /* Table.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
+		44240C0E23E782D100996D19 /* ScheduleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleController.swift; sourceTree = "<group>"; };
+		44240C1023E782E800996D19 /* ScheduleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +50,9 @@
 		44240BD623E7495600996D19 = {
 			isa = PBXGroup;
 			children = (
+				44240C0D23E782A500996D19 /* Schedule */,
+				44240BFD23E7800A00996D19 /* about */,
+				44240BFA23E770F200996D19 /* model */,
 				44240BE123E7495600996D19 /* demo1 */,
 				44240BE023E7495600996D19 /* Products */,
 			);
@@ -65,6 +78,32 @@
 				44240BF023E7495800996D19 /* Info.plist */,
 			);
 			path = demo1;
+			sourceTree = "<group>";
+		};
+		44240BFA23E770F200996D19 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				44240BFB23E7710F00996D19 /* Todo.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		44240BFD23E7800A00996D19 /* about */ = {
+			isa = PBXGroup;
+			children = (
+				44240C0B23E7826100996D19 /* Table.swift */,
+				44240C0923E7825500996D19 /* todoCell.swift */,
+			);
+			path = about;
+			sourceTree = "<group>";
+		};
+		44240C0D23E782A500996D19 /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				44240C0E23E782D100996D19 /* ScheduleController.swift */,
+				44240C1023E782E800996D19 /* ScheduleCell.swift */,
+			);
+			path = Schedule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +177,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44240C0C23E7826100996D19 /* Table.swift in Sources */,
 				44240BE723E7495600996D19 /* ViewController.swift in Sources */,
+				44240C1123E782E800996D19 /* ScheduleCell.swift in Sources */,
+				44240BFC23E7710F00996D19 /* Todo.swift in Sources */,
 				44240BE323E7495600996D19 /* AppDelegate.swift in Sources */,
+				44240C0F23E782D100996D19 /* ScheduleController.swift in Sources */,
+				44240C0A23E7825500996D19 /* todoCell.swift in Sources */,
 				44240BE523E7495600996D19 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
