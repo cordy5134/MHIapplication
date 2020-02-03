@@ -48,7 +48,7 @@
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BTa-Rb-eA6">
                                                         <rect key="frame" x="0.0" y="39" width="382" height="31"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                                     </textField>
                                                 </subviews>
                                                 <constraints>
@@ -115,7 +115,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1046" y="459"/>
+            <point key="canvasLocation" x="-1783" y="790"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Rxt-sy-4qG">
@@ -185,7 +185,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BwV-rW-lmo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-310" y="459"/>
+            <point key="canvasLocation" x="-936" y="790"/>
         </scene>
         <!--Schedule Table View Controller-->
         <scene sceneID="9sx-nT-VMO">
@@ -541,7 +541,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KYH-0v-maf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-310" y="1152"/>
+            <point key="canvasLocation" x="561" y="1835"/>
         </scene>
         <!--back-->
         <scene sceneID="mEq-Ey-KQV">
@@ -608,7 +608,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0IU-vr-uA5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="562" y="-222"/>
+            <point key="canvasLocation" x="561" y="-263"/>
         </scene>
     </scenes>
     <resources>
