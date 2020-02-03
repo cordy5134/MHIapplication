@@ -1,5 +1,5 @@
 //
-//  ScheduleController.swift
+//  Table.swift
 //  demo1
 //
 //  Created by wang songtao on 2/2/20.
@@ -8,13 +8,15 @@
 
 import UIKit
 
-class ScheduleController: UITableViewController {
+class Table: UITableViewController {
+    
     var Todos = [
-        Todo(name: "CSE 3232", check: false),
-        Todo(name: "CSE 3244", check:false),
-        Todo(name: "CSE 3231", check:false),
-        Todo(name: "CSE 5911", check:false),
+        Todo(name: "Class Schedule", check: false),
+        Todo(name: "Final Term Grades", check:false),
+        Todo(name: "Statement of Account", check:false),
+        Todo(name: "Campus Map", check:false),
     ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,10 +27,14 @@ class ScheduleController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
-    @IBAction func back(_ sender: UIButton) {
+    @IBAction func back(_ sender: UIButton){
         dismiss(animated: true, completion: nil)
     }
+    
+
+    
     // MARK: - Table view data source
+
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
@@ -40,9 +46,10 @@ class ScheduleController: UITableViewController {
         return Todos.count
     }
 
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Schedule", for: indexPath) as! ScheduleCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "todo", for: indexPath) as! todoCell
 
         
         
@@ -55,8 +62,10 @@ class ScheduleController: UITableViewController {
     }
     override func tableView(_ tableView: UITableView, titleForHeaderInSection
                                 section: Int) -> String? {
-       return "Schedule"
-    }    /*
+       return "About"
+    }
+
+    /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.

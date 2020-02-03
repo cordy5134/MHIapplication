@@ -1,22 +1,15 @@
 //
-//  Table.swift
+//  CoursesTableViewController.swift
 //  demo1
 //
-//  Created by wang songtao on 2/2/20.
+//  Created by Dongqi Yin on 2/3/20.
 //  Copyright © 2020 wang songtao. All rights reserved.
 //
 
 import UIKit
 
-class Table: UITableViewController {
-    
-    var Todos = [
-        Todo(name: "Class Schedule", check: false),
-        Todo(name: "Final Term Grades", check:false),
-        Todo(name: "Statement of Account", check:false),
-        Todo(name: "Campus Map", check:false),
-    ]
-    
+class CoursesTableViewController: UITableViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,8 +20,14 @@ class Table: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
-    // MARK: - Table view data source
 
+    
+    @IBAction func back(_ sender: UIStoryboardSegue){
+         dismiss(animated: true, completion: nil)
+     }
+
+    // MARK: - Table view data source
+    /*
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
@@ -36,27 +35,18 @@ class Table: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return Todos.count
+        return 1
     }
-
-    
+    */
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "todo", for: indexPath) as! todoCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
-        
-        
-        cell.checkMark.text = Todos[indexPath.row].check ? "√" : ""
-        cell.todo.text = Todos[indexPath.row].name
-    
         // Configure the cell...
-        //cell.textLabel?.text = "test"
+
         return cell
     }
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection
-                                section: Int) -> String? {
-       return "About"
-    }
+    */
 
     /*
     // Override to support conditional editing of the table view.

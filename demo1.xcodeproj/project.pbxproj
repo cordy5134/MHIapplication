@@ -16,8 +16,9 @@
 		44240BFC23E7710F00996D19 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44240BFB23E7710F00996D19 /* Todo.swift */; };
 		44240C0A23E7825500996D19 /* todoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44240C0923E7825500996D19 /* todoCell.swift */; };
 		44240C0C23E7826100996D19 /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44240C0B23E7826100996D19 /* Table.swift */; };
-		44240C0F23E782D100996D19 /* ScheduleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44240C0E23E782D100996D19 /* ScheduleController.swift */; };
-		44240C1123E782E800996D19 /* ScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44240C1023E782E800996D19 /* ScheduleCell.swift */; };
+		AF364BEA23E87E1C00E7F7E7 /* CoursesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF364BE923E87E1C00E7F7E7 /* CoursesTableViewController.swift */; };
+		AF364BEC23E87E5700E7F7E7 /* ScheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF364BEB23E87E5700E7F7E7 /* ScheduleTableViewController.swift */; };
+		AF364BEE23E8871800E7F7E7 /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF364BED23E8871800E7F7E7 /* MessageTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +33,9 @@
 		44240BFB23E7710F00996D19 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		44240C0923E7825500996D19 /* todoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = todoCell.swift; sourceTree = "<group>"; };
 		44240C0B23E7826100996D19 /* Table.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
-		44240C0E23E782D100996D19 /* ScheduleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleController.swift; sourceTree = "<group>"; };
-		44240C1023E782E800996D19 /* ScheduleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCell.swift; sourceTree = "<group>"; };
+		AF364BE923E87E1C00E7F7E7 /* CoursesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesTableViewController.swift; sourceTree = "<group>"; };
+		AF364BEB23E87E5700E7F7E7 /* ScheduleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewController.swift; sourceTree = "<group>"; };
+		AF364BED23E8871800E7F7E7 /* MessageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,8 +52,7 @@
 		44240BD623E7495600996D19 = {
 			isa = PBXGroup;
 			children = (
-				44240C0D23E782A500996D19 /* Schedule */,
-				44240BFD23E7800A00996D19 /* about */,
+				44240BFD23E7800A00996D19 /* viewControllers */,
 				44240BFA23E770F200996D19 /* model */,
 				44240BE123E7495600996D19 /* demo1 */,
 				44240BE023E7495600996D19 /* Products */,
@@ -71,7 +72,6 @@
 			children = (
 				44240BE223E7495600996D19 /* AppDelegate.swift */,
 				44240BE423E7495600996D19 /* SceneDelegate.swift */,
-				44240BE623E7495600996D19 /* ViewController.swift */,
 				44240BE823E7495600996D19 /* Main.storyboard */,
 				44240BEB23E7495800996D19 /* Assets.xcassets */,
 				44240BED23E7495800996D19 /* LaunchScreen.storyboard */,
@@ -83,27 +83,22 @@
 		44240BFA23E770F200996D19 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				44240BFB23E7710F00996D19 /* Todo.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
 		};
-		44240BFD23E7800A00996D19 /* about */ = {
+		44240BFD23E7800A00996D19 /* viewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				44240BFB23E7710F00996D19 /* Todo.swift */,
+				44240BE623E7495600996D19 /* ViewController.swift */,
 				44240C0B23E7826100996D19 /* Table.swift */,
 				44240C0923E7825500996D19 /* todoCell.swift */,
+				AF364BE923E87E1C00E7F7E7 /* CoursesTableViewController.swift */,
+				AF364BEB23E87E5700E7F7E7 /* ScheduleTableViewController.swift */,
+				AF364BED23E8871800E7F7E7 /* MessageTableViewController.swift */,
 			);
-			path = about;
-			sourceTree = "<group>";
-		};
-		44240C0D23E782A500996D19 /* Schedule */ = {
-			isa = PBXGroup;
-			children = (
-				44240C0E23E782D100996D19 /* ScheduleController.swift */,
-				44240C1023E782E800996D19 /* ScheduleCell.swift */,
-			);
-			path = Schedule;
+			path = viewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,13 +172,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF364BEC23E87E5700E7F7E7 /* ScheduleTableViewController.swift in Sources */,
 				44240C0C23E7826100996D19 /* Table.swift in Sources */,
 				44240BE723E7495600996D19 /* ViewController.swift in Sources */,
-				44240C1123E782E800996D19 /* ScheduleCell.swift in Sources */,
 				44240BFC23E7710F00996D19 /* Todo.swift in Sources */,
 				44240BE323E7495600996D19 /* AppDelegate.swift in Sources */,
-				44240C0F23E782D100996D19 /* ScheduleController.swift in Sources */,
+				AF364BEA23E87E1C00E7F7E7 /* CoursesTableViewController.swift in Sources */,
 				44240C0A23E7825500996D19 /* todoCell.swift in Sources */,
+				AF364BEE23E8871800E7F7E7 /* MessageTableViewController.swift in Sources */,
 				44240BE523E7495600996D19 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

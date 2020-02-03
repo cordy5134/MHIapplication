@@ -1,20 +1,15 @@
 //
-//  ScheduleController.swift
+//  MessageTableViewController.swift
 //  demo1
 //
-//  Created by wang songtao on 2/2/20.
+//  Created by Dongqi Yin on 2/3/20.
 //  Copyright © 2020 wang songtao. All rights reserved.
 //
 
 import UIKit
 
-class ScheduleController: UITableViewController {
-    var Todos = [
-        Todo(name: "CSE 3232", check: false),
-        Todo(name: "CSE 3244", check:false),
-        Todo(name: "CSE 3231", check:false),
-        Todo(name: "CSE 5911", check:false),
-    ]
+class MessageTableViewController: UITableViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,39 +19,33 @@ class ScheduleController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-
-    @IBAction func back(_ sender: UIButton) {
-        dismiss(animated: true, completion: nil)
+    @IBAction func back(_ sender: UIStoryboardSegue){
+          dismiss(animated: true, completion: nil)
     }
-    // MARK: - Table view data source
 
+    // MARK: - Table view data source
+    /*
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 0
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return Todos.count
+        return 0
     }
-
+    */
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Schedule", for: indexPath) as! ScheduleCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
-        
-        
-        cell.checkMark.text = Todos[indexPath.row].check ? "√" : ""
-        cell.todo.text = Todos[indexPath.row].name
-    
         // Configure the cell...
-        //cell.textLabel?.text = "test"
+
         return cell
     }
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection
-                                section: Int) -> String? {
-       return "Schedule"
-    }    /*
+    */
+
+    /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
