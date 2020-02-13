@@ -13,13 +13,9 @@
 		44240BEA23E7495600996D19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44240BE823E7495600996D19 /* Main.storyboard */; };
 		44240BEC23E7495800996D19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44240BEB23E7495800996D19 /* Assets.xcassets */; };
 		44240BEF23E7495800996D19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44240BED23E7495800996D19 /* LaunchScreen.storyboard */; };
-		44240BFC23E7710F00996D19 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44240BFB23E7710F00996D19 /* Todo.swift */; };
-		44240C0A23E7825500996D19 /* todoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44240C0923E7825500996D19 /* todoCell.swift */; };
-		44240C0C23E7826100996D19 /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44240C0B23E7826100996D19 /* Table.swift */; };
-		AF364BEA23E87E1C00E7F7E7 /* CoursesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF364BE923E87E1C00E7F7E7 /* CoursesTableViewController.swift */; };
-		AF364BEC23E87E5700E7F7E7 /* ScheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF364BEB23E87E5700E7F7E7 /* ScheduleTableViewController.swift */; };
-		AF364BEE23E8871800E7F7E7 /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF364BED23E8871800E7F7E7 /* MessageTableViewController.swift */; };
+		44240BFC23E7710F00996D19 /* dataStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44240BFB23E7710F00996D19 /* dataStructure.swift */; };
 		AF6F53A123E89C750038B43D /* demo1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6F53A023E89C750038B43D /* demo1UITests.swift */; };
+		AF6F53A923F4DC790038B43D /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6F53A823F4DC790038B43D /* AboutVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,15 +37,11 @@
 		44240BEB23E7495800996D19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44240BEE23E7495800996D19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44240BF023E7495800996D19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		44240BFB23E7710F00996D19 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
-		44240C0923E7825500996D19 /* todoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = todoCell.swift; sourceTree = "<group>"; };
-		44240C0B23E7826100996D19 /* Table.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
-		AF364BE923E87E1C00E7F7E7 /* CoursesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesTableViewController.swift; sourceTree = "<group>"; };
-		AF364BEB23E87E5700E7F7E7 /* ScheduleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewController.swift; sourceTree = "<group>"; };
-		AF364BED23E8871800E7F7E7 /* MessageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
+		44240BFB23E7710F00996D19 /* dataStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataStructure.swift; sourceTree = "<group>"; };
 		AF6F539E23E89C750038B43D /* demo1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = demo1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF6F53A023E89C750038B43D /* demo1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demo1UITests.swift; sourceTree = "<group>"; };
 		AF6F53A223E89C750038B43D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF6F53A823F4DC790038B43D /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,13 +105,9 @@
 		44240BFD23E7800A00996D19 /* viewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				44240BFB23E7710F00996D19 /* Todo.swift */,
+				44240BFB23E7710F00996D19 /* dataStructure.swift */,
 				44240BE623E7495600996D19 /* ViewController.swift */,
-				44240C0B23E7826100996D19 /* Table.swift */,
-				44240C0923E7825500996D19 /* todoCell.swift */,
-				AF364BE923E87E1C00E7F7E7 /* CoursesTableViewController.swift */,
-				AF364BEB23E87E5700E7F7E7 /* ScheduleTableViewController.swift */,
-				AF364BED23E8871800E7F7E7 /* MessageTableViewController.swift */,
+				AF6F53A823F4DC790038B43D /* AboutVC.swift */,
 			);
 			path = viewControllers;
 			sourceTree = "<group>";
@@ -234,14 +222,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF364BEC23E87E5700E7F7E7 /* ScheduleTableViewController.swift in Sources */,
-				44240C0C23E7826100996D19 /* Table.swift in Sources */,
 				44240BE723E7495600996D19 /* ViewController.swift in Sources */,
-				44240BFC23E7710F00996D19 /* Todo.swift in Sources */,
+				AF6F53A923F4DC790038B43D /* AboutVC.swift in Sources */,
+				44240BFC23E7710F00996D19 /* dataStructure.swift in Sources */,
 				44240BE323E7495600996D19 /* AppDelegate.swift in Sources */,
-				AF364BEA23E87E1C00E7F7E7 /* CoursesTableViewController.swift in Sources */,
-				44240C0A23E7825500996D19 /* todoCell.swift in Sources */,
-				AF364BEE23E8871800E7F7E7 /* MessageTableViewController.swift in Sources */,
 				44240BE523E7495600996D19 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

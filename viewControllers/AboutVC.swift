@@ -1,40 +1,27 @@
 //
-//  Table.swift
+//  AboutVC.swift
 //  demo1
 //
-//  Created by wang songtao on 2/2/20.
+//  Created by Dongqi Yin on 2/12/20.
 //  Copyright © 2020 wang songtao. All rights reserved.
 //
 
 import UIKit
 
-class Table: UITableViewController {
-    
-    var Todos = [
-        Todo(name: "Class Schedule", check: false),
-        Todo(name: "Final Term Grades", check:false),
-        Todo(name: "Statement of Account", check:false),
-        Todo(name: "Campus Map", check:false),
-    ]
-    
+class AboutVC: UITableViewController {
+
+    var content = [BasicCell]()
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
+        loadTestData()
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
-    @IBAction func back(_ sender: UIButton){
-        dismiss(animated: true, completion: nil)
-    }
-    
-
-    
     // MARK: - Table view data source
-
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
@@ -43,26 +30,33 @@ class Table: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return Todos.count
+        return content.count
+    }
+    
+    func loadTestData(){
+        content = [
+            BasicCell(title:"test1", date:Date()),
+            BasicCell(title:"test2", date:Date()),
+            BasicCell(title:"test3", date:Date()),
+            BasicCell(title:"test4", date:Date()),
+            
+        ]
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "todo", for: indexPath) as! todoCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 
-        
-        
-        
-        cell.todo.text = Todos[indexPath.row].name
-    
         // Configure the cell...
-        //cell.textLabel?.text = "test"
+        cell.textLabel!.text = content[indexPath.row].title
+        cell.detailTextLabel!.text = content[indexPath.row].date.description
+
         return cell
     }
+    
     override func tableView(_ tableView: UITableView, titleForHeaderInSection
                                 section: Int) -> String? {
-        return "about"
+       return "Testing"
     }
 
     /*

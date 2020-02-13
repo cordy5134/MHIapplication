@@ -8,9 +8,9 @@
 
 import Foundation
 
-struct Todo {
-    var name = ""
-    var check = false
+struct BasicCell {
+    var title : String
+    var date : Date
 }
 
 
