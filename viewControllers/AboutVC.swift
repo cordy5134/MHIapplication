@@ -42,7 +42,8 @@ class AboutVC: UITableViewController {
         cell.textLabel!.text = content[indexPath.row].title
         
         if let detailLabel = cell.detailTextLabel {
-            detailLabel.text = content[indexPath.row].date.description
+            let dateStr = content[indexPath.row].date.description
+            detailLabel.text = String(dateStr.prefix(20))
         }
         
         return cell
