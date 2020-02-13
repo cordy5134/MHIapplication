@@ -34,6 +34,29 @@ class AboutVC: UITableViewController {
     }
     
 
+    func initialize(type: String){
+        if type == "About"{
+            self.content = [
+                BasicCell(title: "About", date: Date())
+            ]
+            self.header = "About"
+        }else if type == "Course"{
+            self.content = [
+                BasicCell(title: "Course", date: Date())
+            ]
+            self.header = "Course"
+        }else if type == "Schedule"{
+            self.content = [
+                BasicCell(title: "Schedule", date: Date())
+            ]
+            self.header = "Schedule"
+        }else if type == "Message"{
+            self.content = [
+                BasicCell(title: "Message", date: Date())
+            ]
+            self.header = "Message"
+        }
+    }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)

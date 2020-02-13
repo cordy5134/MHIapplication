@@ -47,29 +47,16 @@ class MainMenuVCViewController: UIViewController {
             if let button = sender as! UIButton?{
                 if button == AboutButton{
                     let tableVC = segue.destination as! AboutVC
-                    tableVC.content = [
-                        BasicCell(title: "About", date: Date())
-                    ]
-                    tableVC.header = "ABout"
+                    tableVC.initialize(type: "About")
                 }else if button == CourseButton{
                     let tableVC = segue.destination as! AboutVC
-                    tableVC.content = [
-                        BasicCell(title: "Course", date: Date())
-                    ]
-                    tableVC.header = "Course"
+                    tableVC.initialize(type: "Course")
                 }else if button == MessageButton{
                     let tableVC = segue.destination as! AboutVC
-                    tableVC.content = [
-                        BasicCell(title: "Message", date: Date())
-                    ]
-                    tableVC.header = "Message"
-                    
+                    tableVC.initialize(type: "Message")
                 }else if button == ScheduleButton{
                     let tableVC = segue.destination as! AboutVC
-                    tableVC.content = [
-                        BasicCell(title: "Schedule", date: Date())
-                    ]
-                    tableVC.header = "Schedule"
+                    tableVC.initialize(type: "Schedule")
                 }
             }
         }
