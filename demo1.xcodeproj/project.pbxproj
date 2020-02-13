@@ -16,6 +16,7 @@
 		44240BFC23E7710F00996D19 /* dataStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44240BFB23E7710F00996D19 /* dataStructure.swift */; };
 		AF6F53A123E89C750038B43D /* demo1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6F53A023E89C750038B43D /* demo1UITests.swift */; };
 		AF6F53A923F4DC790038B43D /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6F53A823F4DC790038B43D /* AboutVC.swift */; };
+		AF6F53AE23F4ED170038B43D /* MainMenuVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6F53AD23F4ED170038B43D /* MainMenuVCViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		AF6F53A023E89C750038B43D /* demo1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demo1UITests.swift; sourceTree = "<group>"; };
 		AF6F53A223E89C750038B43D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF6F53A823F4DC790038B43D /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
+		AF6F53AA23F4EABD0038B43D /* demo1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = demo1.entitlements; sourceTree = "<group>"; };
+		AF6F53AD23F4ED170038B43D /* MainMenuVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuVCViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,7 @@
 		44240BE123E7495600996D19 /* demo1 */ = {
 			isa = PBXGroup;
 			children = (
+				AF6F53AA23F4EABD0038B43D /* demo1.entitlements */,
 				44240BE223E7495600996D19 /* AppDelegate.swift */,
 				44240BE423E7495600996D19 /* SceneDelegate.swift */,
 				44240BE823E7495600996D19 /* Main.storyboard */,
@@ -108,6 +112,7 @@
 				44240BFB23E7710F00996D19 /* dataStructure.swift */,
 				44240BE623E7495600996D19 /* ViewController.swift */,
 				AF6F53A823F4DC790038B43D /* AboutVC.swift */,
+				AF6F53AD23F4ED170038B43D /* MainMenuVCViewController.swift */,
 			);
 			path = viewControllers;
 			sourceTree = "<group>";
@@ -227,6 +232,7 @@
 				44240BFC23E7710F00996D19 /* dataStructure.swift in Sources */,
 				44240BE323E7495600996D19 /* AppDelegate.swift in Sources */,
 				44240BE523E7495600996D19 /* SceneDelegate.swift in Sources */,
+				AF6F53AE23F4ED170038B43D /* MainMenuVCViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,7 +392,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = demo1/demo1.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				INFOPLIST_FILE = demo1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -394,6 +403,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangsongtao.demo1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -403,7 +413,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = demo1/demo1.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				INFOPLIST_FILE = demo1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -411,6 +424,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangsongtao.demo1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

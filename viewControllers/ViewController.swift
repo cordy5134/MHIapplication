@@ -18,9 +18,7 @@ class ViewController: UIViewController {
 
 
 
-    @IBAction func back(_ sender: UIStoryboardSegue){
-        
-    }
+    
 
     
 }

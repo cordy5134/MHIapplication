@@ -11,12 +11,12 @@ import UIKit
 class AboutVC: UITableViewController {
 
     var content = [BasicCell]()
+    var header : String?
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-        loadTestData()
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
@@ -33,15 +33,6 @@ class AboutVC: UITableViewController {
         return content.count
     }
     
-    func loadTestData(){
-        content = [
-            BasicCell(title:"test1", date:Date()),
-            BasicCell(title:"test2", date:Date()),
-            BasicCell(title:"test3", date:Date()),
-            BasicCell(title:"test4", date:Date()),
-            
-        ]
-    }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -49,14 +40,17 @@ class AboutVC: UITableViewController {
 
         // Configure the cell...
         cell.textLabel!.text = content[indexPath.row].title
-        cell.detailTextLabel!.text = content[indexPath.row].date.description
-
+        
+        if let detailLabel = cell.detailTextLabel {
+            detailLabel.text = content[indexPath.row].date.description
+        }
+        
         return cell
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection
                                 section: Int) -> String? {
-       return "Testing"
+        return self.header
     }
 
     /*
