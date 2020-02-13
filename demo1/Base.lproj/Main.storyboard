@@ -181,7 +181,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="vaN-Yl-ERC"/>
                     </view>
-                    <navigationItem key="navigationItem" id="1Oh-bN-gB1"/>
+                    <navigationItem key="navigationItem" id="1Oh-bN-gB1">
+                        <barButtonItem key="backBarButtonItem" title="Main Menu" id="LaS-pS-WEr"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="AboutButton" destination="oCN-0K-oJj" id="zez-xg-W9V"/>
                         <outlet property="CourseButton" destination="71F-P6-pE8" id="1Zh-qA-6lb"/>
@@ -237,7 +239,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r9c-9P-Bcf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-46" y="538"/>
+            <point key="canvasLocation" x="-155" y="790"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZOl-n2-Ony">

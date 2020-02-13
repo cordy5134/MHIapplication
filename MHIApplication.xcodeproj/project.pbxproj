@@ -30,7 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		44240BDF23E7495600996D19 /* demo1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demo1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44240BDF23E7495600996D19 /* MHIApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHIApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44240BE223E7495600996D19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44240BE423E7495600996D19 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		44240BE623E7495600996D19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,7 +39,7 @@
 		44240BEE23E7495800996D19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44240BF023E7495800996D19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44240BFB23E7710F00996D19 /* dataStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataStructure.swift; sourceTree = "<group>"; };
-		AF6F539E23E89C750038B43D /* demo1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = demo1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF6F539E23E89C750038B43D /* MHIApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MHIApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF6F53A023E89C750038B43D /* demo1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demo1UITests.swift; sourceTree = "<group>"; };
 		AF6F53A223E89C750038B43D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF6F53A823F4DC790038B43D /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
@@ -79,8 +79,8 @@
 		44240BE023E7495600996D19 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				44240BDF23E7495600996D19 /* demo1.app */,
-				AF6F539E23E89C750038B43D /* demo1UITests.xctest */,
+				44240BDF23E7495600996D19 /* MHIApplication.app */,
+				AF6F539E23E89C750038B43D /* MHIApplicationUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,9 +129,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		44240BDE23E7495600996D19 /* demo1 */ = {
+		44240BDE23E7495600996D19 /* MHIApplication */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 44240BF323E7495800996D19 /* Build configuration list for PBXNativeTarget "demo1" */;
+			buildConfigurationList = 44240BF323E7495800996D19 /* Build configuration list for PBXNativeTarget "MHIApplication" */;
 			buildPhases = (
 				44240BDB23E7495600996D19 /* Sources */,
 				44240BDC23E7495600996D19 /* Frameworks */,
@@ -141,14 +141,14 @@
 			);
 			dependencies = (
 			);
-			name = demo1;
+			name = MHIApplication;
 			productName = demo1;
-			productReference = 44240BDF23E7495600996D19 /* demo1.app */;
+			productReference = 44240BDF23E7495600996D19 /* MHIApplication.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AF6F539D23E89C750038B43D /* demo1UITests */ = {
+		AF6F539D23E89C750038B43D /* MHIApplicationUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AF6F53A723E89C750038B43D /* Build configuration list for PBXNativeTarget "demo1UITests" */;
+			buildConfigurationList = AF6F53A723E89C750038B43D /* Build configuration list for PBXNativeTarget "MHIApplicationUITests" */;
 			buildPhases = (
 				AF6F539A23E89C750038B43D /* Sources */,
 				AF6F539B23E89C750038B43D /* Frameworks */,
@@ -159,9 +159,9 @@
 			dependencies = (
 				AF6F53A423E89C750038B43D /* PBXTargetDependency */,
 			);
-			name = demo1UITests;
+			name = MHIApplicationUITests;
 			productName = demo1UITests;
-			productReference = AF6F539E23E89C750038B43D /* demo1UITests.xctest */;
+			productReference = AF6F539E23E89C750038B43D /* MHIApplicationUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -183,7 +183,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 44240BDA23E7495600996D19 /* Build configuration list for PBXProject "demo1" */;
+			buildConfigurationList = 44240BDA23E7495600996D19 /* Build configuration list for PBXProject "MHIApplication" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -196,8 +196,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				44240BDE23E7495600996D19 /* demo1 */,
-				AF6F539D23E89C750038B43D /* demo1UITests */,
+				44240BDE23E7495600996D19 /* MHIApplication */,
+				AF6F539D23E89C750038B43D /* MHIApplicationUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -249,7 +249,7 @@
 /* Begin PBXTargetDependency section */
 		AF6F53A423E89C750038B43D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 44240BDE23E7495600996D19 /* demo1 */;
+			target = 44240BDE23E7495600996D19 /* MHIApplication */;
 			targetProxy = AF6F53A323E89C750038B43D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -402,7 +402,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangsongtao.demo1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MHIApplication;
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -423,7 +423,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangsongtao.demo1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MHIApplication;
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -469,7 +469,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		44240BDA23E7495600996D19 /* Build configuration list for PBXProject "demo1" */ = {
+		44240BDA23E7495600996D19 /* Build configuration list for PBXProject "MHIApplication" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				44240BF123E7495800996D19 /* Debug */,
@@ -478,7 +478,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		44240BF323E7495800996D19 /* Build configuration list for PBXNativeTarget "demo1" */ = {
+		44240BF323E7495800996D19 /* Build configuration list for PBXNativeTarget "MHIApplication" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				44240BF423E7495800996D19 /* Debug */,
@@ -487,7 +487,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AF6F53A723E89C750038B43D /* Build configuration list for PBXNativeTarget "demo1UITests" */ = {
+		AF6F53A723E89C750038B43D /* Build configuration list for PBXNativeTarget "MHIApplicationUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AF6F53A523E89C750038B43D /* Debug */,
